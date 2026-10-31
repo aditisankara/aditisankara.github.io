@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditi Sankaranarayanan — ML, interpretable and optimized</title>
+<meta name="description" content="Aditi Sankaranarayanan: Master of Computing student at NUS, building ML systems that are fast and understandable.">
+<link rel="icon" href="assets/aditi.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F5EE}
+.t-light{--bg:#F7F5EE;--grid:#E7E1EF;--card:#FFFDF7;--tint:#EFEAF7;--line:#1E1A26;--purple:#5B3E8C;--ink:#1E1A26;--body:#3A3442;--muted:#4A4552;--name:#C2560A;--date:#A84A06}
+.t-dark{--bg:#15121C;--grid:#221D2C;--card:#1F1A29;--tint:#2A2338;--line:#4B4160;--purple:#6A4BA6;--ink:#F1EDF7;--body:#C9C2D6;--muted:#A69EB5;--name:#F59A4A;--date:#F2A15A}
+a{color:var(--ink)}a:hover{color:var(--name)}
+.t-light .ic-dark{display:none!important}.t-dark .ic-light{display:none!important}html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div id="root" class="t-light" style="font-family: 'DM Sans', system-ui, sans-serif; color: var(--ink); background-color: var(--bg); background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 28px 28px; min-height: 100vh">
+
+<!-- NAV -->
+<header style="background: var(--bg); border-bottom: 2px solid var(--line)">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<a href="#top" style="display: flex; align-items: baseline; gap: 12px; text-decoration: none; padding: 6px 0">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: -0.03em">aditi<span style="color: #F08A2C">.</span></span>
+<span style="font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted)">ML — interpretable &amp; optimized</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; font-size: 15px; font-weight: 500">
+<a href="#projects" style="text-decoration: none; padding: 10px 0">Projects</a>
+<a href="#education" style="text-decoration: none; padding: 10px 0">Education</a>
+<a href="#experience" style="text-decoration: none; padding: 10px 0">Experience</a>
+<a href="#upskilling" style="text-decoration: none; padding: 10px 0">Upskilling</a>
+<a href="https://drive.google.com/file/d/1eZ8yXoV6MeevktE07Y3JaxNCftGnPlQ3/view?usp=sharing" style="text-decoration: none; padding: 10px 18px; border: 2px solid var(--purple); border-radius: 999px; font-weight: 700">Résumé</a>
+<button type="button" id="themeToggle" aria-label="Switch between light and dark mode" style="display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 8px 14px; background: var(--card); color: var(--ink); border: 2px solid var(--line); border-radius: 999px; font-family: 'DM Mono', monospace; font-size: 13px; cursor: pointer">
+<span class="ic-dark" style="display:contents">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</span>
+<span class="ic-light" style="display:contents">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+</span>
+<span id="themeLabel">dark mode</span>
+</button>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 64px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px">
+
+<div style="display: flex; flex-direction: column; gap: 28px; flex: 0 0 auto">
+<a href="#projects" style="display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; font-size: 13px; font-weight: 500">
+<svg width="60" height="48" viewBox="0 0 60 48" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="#F2C14E" stroke="#1E1A26" stroke-width="2"/><path d="M2 16h56" stroke="#1E1A26" stroke-width="2"/></svg>
+projects
+</a>
+<a href="#education" style="display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; font-size: 13px; font-weight: 500">
+<svg width="60" height="48" viewBox="0 0 60 48" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="#F2C14E" stroke="#1E1A26" stroke-width="2"/><path d="M2 16h56" stroke="#1E1A26" stroke-width="2"/></svg>
+education
+</a>
+</div>
+
+<div style="flex: 1 1 560px; max-width: 720px; min-width: 0; background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 8px 8px 0 var(--purple)">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--purple); color: #FFFFFF; border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 14px">
+<span>C:\ADITI\hello</span>
+<span aria-hidden="true" style="width: 22px; height: 22px; border-radius: 6px; background: #F08A2C; border: 2px solid #1E1A26; display: flex; align-items: center; justify-content: center; color: #1E1A26; font-size: 12px; line-height: 1">✕</span>
+</div>
+<div style="padding: 40px 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px">
+<div style="width: 180px; height: 180px; flex: 0 0 auto; border-radius: 50%; border: 2px solid var(--line); overflow: hidden; background: #F08A2C">
+<img src="assets/aditi.jpg" alt="Portrait of Aditi" style="width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 600">hi! i'm</span>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(48px, 6vw, 72px); line-height: 0.95; font-weight: 800; color: var(--name); letter-spacing: -0.02em">Aditi</h1>
+<p style="margin: 0; font-family: 'DM Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--body)">ML — interpretable and optimized</p>
+<p style="margin: 4px 0 0; font-size: 17px; line-height: 1.55; color: var(--body)">I'm a Master of Computing student at NUS, learning to build ML systems that are both fast and understandable. After two years as a software engineer at Fidelity, I'm now digging into how models work on the inside and how to serve them efficiently, one project at a time.</p>
+</div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 28px; flex: 0 0 auto">
+<a href="#contact" style="display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; font-size: 13px; font-weight: 500">
+<svg width="60" height="48" viewBox="0 0 60 48" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="#F2C14E" stroke="#1E1A26" stroke-width="2"/><path d="M2 16h56" stroke="#1E1A26" stroke-width="2"/></svg>
+contact
+</a>
+<a href="https://drive.google.com/file/d/1eZ8yXoV6MeevktE07Y3JaxNCftGnPlQ3/view?usp=sharing" style="display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; font-size: 13px; font-weight: 500">
+<svg width="60" height="48" viewBox="0 0 60 48" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="#F2C14E" stroke="#1E1A26" stroke-width="2"/><path d="M2 16h56" stroke="#1E1A26" stroke-width="2"/></svg>
+résumé
+</a>
+</div>
+</section>
+
+<!-- dock -->
+<div style="background: var(--tint); border-top: 2px solid var(--line); border-bottom: 2px solid var(--line)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+<a href="https://www.linkedin.com/in/aditi-sankara" style="text-decoration: none; padding: 10px 18px; background: var(--card); border: 2px solid var(--purple); border-radius: 10px; font-family: 'DM Mono', monospace; font-size: 14px">linkedin</a>
+<a href="https://github.com/aditisankara" style="text-decoration: none; padding: 10px 18px; background: var(--card); border: 2px solid var(--purple); border-radius: 10px; font-family: 'DM Mono', monospace; font-size: 14px">github</a>
+<a href="https://ieeexplore.ieee.org/document/10544307/" style="text-decoration: none; padding: 10px 18px; background: var(--card); border: 2px solid var(--purple); border-radius: 10px; font-family: 'DM Mono', monospace; font-size: 14px">publication</a>
+<a href="mailto:aditi.sankara@u.nus.edu" style="text-decoration: none; padding: 10px 18px; background: var(--card); border: 2px solid var(--purple); border-radius: 10px; font-family: 'DM Mono', monospace; font-size: 14px">email</a>
+</div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'DM Mono', monospace; font-size: 13px; color: var(--muted)">C:\ADITI\projects</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(36px, 4.5vw, 56px); font-weight: 800; letter-spacing: -0.02em; line-height: 1">Projects</h2>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px">
+
+<article style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 6px 6px 0 var(--purple)">
+<div style="padding: 10px 14px; background: var(--purple); color: #FFF; border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 13px">lucidrt</div>
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800">LucidRT</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--body)">Medical text simplification with Qwen2.5-1.5B, LoRA fine-tuned, with a faithfulness audit and a mechanistic interpretability pipeline. On the inference side: KV caching, int8 / int4-AWQ quantization and batching, benchmarked against vLLM.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 12px">
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">LoRA</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">nnsight</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">quantization</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">vLLM</span>
+</div>
+<a href="https://github.com/aditisankara/lucidrt" style="font-weight: 700; font-size: 15px; padding: 8px 0">GitHub ↗</a>
+</div>
+</article>
+
+<article style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 10px 14px; background: var(--tint); border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 13px">clinicalbert-xai</div>
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800">Explainable ClinicalBERT</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--body)">ClinicalBERT on clinical text, paired with LIME explanations to show which words drive each prediction. Published at IEEE ICETCS 2024.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 12px">
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">ClinicalBERT</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">LIME</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">explainability</span>
+</div>
+<a href="https://ieeexplore.ieee.org/document/10544307/" style="font-weight: 700; font-size: 15px; padding: 8px 0">Paper ↗</a>
+</div>
+</article>
+
+<article style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 10px 14px; background: var(--tint); border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 13px">jumpstart.ai</div>
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800">jumpstart.ai</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--body)">An internal LLM-powered RAG tool I worked on at Fidelity, helping engineers find answers in internal knowledge.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 12px">
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">RAG</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">LLMs</span>
+</div>
+</div>
+</article>
+
+<article style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 10px 14px; background: var(--tint); border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 13px">cattlesync</div>
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800">CattleSync</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--body)">An IoT digital twin of a dairy cow on Azure, for health monitoring. I built the Android app, the middleware and the backend APIs.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 12px">
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">IoT</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Azure Digital Twins</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Android</span>
+</div></div>
+</article>
+
+<article style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column">
+<div style="padding: 10px 14px; background: var(--tint); border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 13px">bullbyte</div>
+<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800">BullByte</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--body)">A full-stack LLM platform that matches claims big-tech CEOs make on earnings calls against the numbers their companies later report, using an SEC EDGAR pipeline.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 12px">
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">LLMs</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">FastAPI</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">NestJS</span>
+<span style="padding: 5px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">PostgreSQL</span>
+</div>
+<a href="https://github.com/aditisankara/bullbyte" style="font-weight: 700; font-size: 15px; padding: 8px 0">GitHub ↗</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'DM Mono', monospace; font-size: 13px; color: var(--muted)">C:\ADITI\education</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(36px, 4.5vw, 56px); font-weight: 800; letter-spacing: -0.02em; line-height: 1">Education</h2>
+</div>
+<div style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 32px; border-bottom: 2px solid var(--line)">
+<span style="flex: 0 0 160px; font-family: 'DM Mono', monospace; font-size: 14px; color: var(--date)">Aug 2026 — now</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 18px; font-weight: 500; line-height: 1.4">Master of Computing (Computer Science)</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 30px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.15">National University of Singapore</span>
+<span style="margin-top: 4px; font-size: 15px; color: var(--body); line-height: 1.6">Graph Machine Learning · Distributed Systems · Uncertainty Modeling in AI</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 32px">
+<span style="flex: 0 0 160px; font-family: 'DM Mono', monospace; font-size: 14px; color: var(--date)">Nov 2020 — Jul 2024</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 18px; font-weight: 500; line-height: 1.4">B.E. Information Science and Engineering</span>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 30px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.15">B.M.S. College of Engineering</span>
+<span style="margin-top: 4px; font-size: 15px; color: var(--body); line-height: 1.6">Machine Learning · Deep Learning · Probability · Discrete Mathematics &amp; Statistics · Linear Algebra · Advanced Python Programming</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'DM Mono', monospace; font-size: 13px; color: var(--muted)">C:\ADITI\experience</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(36px, 4.5vw, 56px); font-weight: 800; letter-spacing: -0.02em; line-height: 1">Experience</h2>
+</div>
+<div style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 32px">
+<span style="flex: 0 0 160px; font-family: 'DM Mono', monospace; font-size: 14px; color: var(--date)">May 2023 — Jul 2026</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 600">Software Engineer — Fidelity Investments, Bengaluru</span>
+<span style="font-size: 16px; color: var(--body); line-height: 1.55">Brokerage Platforms team, two years full-time after two internships there.</span>
+<ul style="margin: 8px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.6; color: var(--body)">
+<li><strong style="color: var(--ink)">jumpstart.ai</strong> – Built an internal LLM + RAG assistant with embeddings-based semantic search over large enterprise document sets, with relevance ranking and source citations for every answer; adopted by 30+ engineers, cutting document-search time by an estimated 2 hours/week per user.</li>
+<li><strong style="color: var(--ink)">FMAD</strong> – Built a lightweight agentic framework adapted from the open-source BMAD method, orchestrating multi-step AI workflows through reusable agent skill definitions; led a knowledge-transfer session for the team.</li>
+<li>Engineered and tested UI and service-layer software for Fidelity's flagship multi-asset trading platform (50K+ trades within 2 hours of rollout; +30% observability coverage); debugged production incidents on-call.</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 28px; border: 2px dashed var(--purple); border-radius: 12px; background: var(--tint)">
+<div style="display: flex; align-items: center; gap: 12px; flex: 1 1 360px; min-width: 0">
+<span aria-hidden="true" style="width: 12px; height: 12px; flex: 0 0 auto; border-radius: 50%; background: #2FA36B; border: 2px solid var(--line)"></span>
+<span style="font-size: 17px; line-height: 1.5"><strong>Open to internships and research opportunities</strong> in ML engineering, inference and interpretability, in Singapore.</span>
+</div>
+<a href="https://www.linkedin.com/in/aditi-sankara" style="font-weight: 700; font-size: 15px; padding: 10px 0">Let's connect ↗</a>
+</div>
+</section>
+
+<!-- UPSKILLING -->
+<section id="upskilling" style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'DM Mono', monospace; font-size: 13px; color: var(--muted)">C:\ADITI\upskilling</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(36px, 4.5vw, 56px); font-weight: 800; letter-spacing: -0.02em; line-height: 1">Upskilling</h2>
+</div>
+<div style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 28px; padding: 22px 28px; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 220px; font-family: 'Bricolage Grotesque', sans-serif; font-size: 18px; font-weight: 800; padding-top: 4px">Machine learning</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 13px">
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">PyTorch</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Hugging Face Transformers</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">TensorFlow</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">scikit-learn</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">NumPy</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Pandas</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">fine-tuning</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">NLP</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">graph ML</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 28px; padding: 22px 28px; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 220px; font-family: 'Bricolage Grotesque', sans-serif; font-size: 18px; font-weight: 800; padding-top: 4px">Interpretability &amp; explainability</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 13px">
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">LIME</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">SHAP</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">nnsight</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">TransformerLens</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 28px; padding: 22px 28px; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 220px; font-family: 'Bricolage Grotesque', sans-serif; font-size: 18px; font-weight: 800; padding-top: 4px">LLMs</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 13px">
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">RAG</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">prompt engineering</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">tool calling</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">agentic workflows</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">inference optimization</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 28px; padding: 22px 28px; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 220px; font-family: 'Bricolage Grotesque', sans-serif; font-size: 18px; font-weight: 800; padding-top: 4px">Programming</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 13px">
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Python</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Java</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">C/C++</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">JavaScript/TypeScript</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">SQL</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">HTML/CSS</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px 28px; padding: 22px 28px">
+<span style="flex: 0 0 220px; font-family: 'Bricolage Grotesque', sans-serif; font-size: 18px; font-weight: 800; padding-top: 4px">Software &amp; cloud</span>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'DM Mono', monospace; font-size: 13px">
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Angular</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">React</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Node.js</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">NestJS</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">FastAPI</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">PostgreSQL</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Docker</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Git</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">CI/CD</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">AWS</span>
+<span style="padding: 6px 12px; background: var(--tint); border: 1px solid var(--purple); border-radius: 999px">Azure</span>
+</div>
+</div></div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 56px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(36px, 5vw, 64px); font-weight: 800; letter-spacing: -0.02em; line-height: 1">Let's connect.</h2>
+<p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: var(--body)">I'm looking for ML engineering and inference engineering internships in Singapore, and I'm always happy to chat about interpretability.</p>
+<a href="https://www.linkedin.com/in/aditi-sankara" style="text-decoration: none; padding: 14px 26px; background: var(--purple); color: #FFFFFF; border: 2px solid var(--line); border-radius: 999px; box-shadow: 4px 4px 0 #F08A2C; font-weight: 700; font-size: 16px">Connect on LinkedIn ↗</a>
+</section>
+
+<!-- ARTISTIC SIDE LINK -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 80px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: 40px; background: #F08A2C; border: 2px solid #1E1A26; border-radius: 16px; box-shadow: 8px 8px 0 var(--purple)">
+<span style="flex: 1 1 420px; min-width: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(30px, 4vw, 48px); font-weight: 800; line-height: 1.05; color: #1E1A26">I also sing and dance.</span>
+<a href="artistic.html" style="text-decoration: none; padding: 14px 24px; background: #1E1A26; color: #FFFFFF; border-radius: 999px; font-weight: 700; font-size: 16px">Meet my artistic side →</a>
+</div>
+</section>
+
+<footer style="background: var(--tint); color: var(--ink); border-top: 2px solid var(--line)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'DM Mono', monospace; font-size: 13px">
+<span>© 2026 Aditi · Singapore</span>
+<span>C:\ADITI&gt; shutdown /s /t 0 — just kidding</span>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){
+  var root=document.getElementById('root'), btn=document.getElementById('themeToggle'), lab=document.getElementById('themeLabel');
+  function apply(d){root.className=d?'t-dark':'t-light'; if(lab) lab.textContent=d?'light mode':'dark mode'; document.body.style.background=d?'#15121C':'#F7F5EE';}
+  var d=false; try{d=localStorage.getItem('theme')==='dark';}catch(e){}
+  apply(d);
+  if(btn) btn.addEventListener('click',function(){d=!d; apply(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){}});
+})();
+</script>
+</body>
+</html>
