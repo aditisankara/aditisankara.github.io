@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#F7F5EE}
-.t-light{--bg:#F7F5EE;--grid:#EADFD6;--card:#FFFDF7;--tint:#F3E7E2;--line:#1E1A26;--purple:#7A2E2E;--ink:#1E1A26;--body:#3E3430;--muted:#5A4A44;--name:#C2560A;--date:#A84A06}
-.t-dark{--bg:#17110F;--grid:#251C1A;--card:#211917;--tint:#2E2220;--line:#5A4440;--purple:#8E3A3A;--ink:#F5EDE9;--body:#D6C9C4;--muted:#B5A49E;--name:#F59A4A;--date:#F2A15A}
+.t-light{--bg:#F7F5EE;--grid:#DFE6EB;--card:#FFFDF7;--tint:#E7EEF2;--line:#14202A;--purple:#003049;--on-accent:#FFFFFF;--ink:#14202A;--body:#33404A;--muted:#46525C;--name:#C2560A;--date:#A84A06}
+.t-dark{--bg:#0E141A;--grid:#1A232C;--card:#151D25;--tint:#1E2A35;--line:#3A4A58;--purple:#2F6A8C;--on-accent:#FFFFFF;--ink:#ECF1F5;--body:#C3CDD5;--muted:#9FAAB4;--name:#F59A4A;--date:#F2A15A}
 a{color:var(--ink)}a:hover{color:var(--name)}
 .t-light .ic-dark{display:none!important}.t-dark .ic-light{display:none!important}html{scroll-behavior:smooth}
 </style>
@@ -60,7 +60,7 @@ education
 </div>
 
 <div style="flex: 1 1 560px; max-width: 720px; min-width: 0; background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 8px 8px 0 var(--purple)">
-<div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--purple); color: #FFFFFF; border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 14px">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--purple); color: var(--on-accent); border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 14px">
 <span>C:\ADITI\hello</span>
 <span aria-hidden="true" style="width: 22px; height: 22px; border-radius: 6px; background: #F08A2C; border: 2px solid #1E1A26; display: flex; align-items: center; justify-content: center; color: #1E1A26; font-size: 12px; line-height: 1">✕</span>
 </div>
@@ -110,7 +110,7 @@ résumé
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px">
 
 <article style="background: var(--card); border: 2px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 6px 6px 0 var(--purple)">
-<div style="padding: 10px 14px; background: var(--purple); color: #FFF; border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 13px">lucidrt</div>
+<div style="padding: 10px 14px; background: var(--purple); color: var(--on-accent); border-bottom: 2px solid var(--line); font-family: 'DM Mono', monospace; font-size: 13px">lucidrt</div>
 <div style="padding: 28px; display: flex; flex-direction: column; gap: 12px; flex: 1">
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 800">LucidRT</h3>
 <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--body)">Medical text simplification with Qwen2.5-1.5B, LoRA fine-tuned, with a faithfulness audit and a mechanistic interpretability pipeline. On the inference side: KV caching, int8 / int4-AWQ quantization and batching, benchmarked against vLLM.</p>
@@ -310,7 +310,7 @@ résumé
 <section id="contact" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 56px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
 <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(36px, 5vw, 64px); font-weight: 800; letter-spacing: -0.02em; line-height: 1">Let's connect.</h2>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px">
-<a href="https://www.linkedin.com/in/aditi-sankara" style="text-decoration: none; padding: 14px 26px; background: var(--purple); color: #FFFFFF; border: 2px solid var(--line); border-radius: 999px; box-shadow: 4px 4px 0 #F08A2C; font-weight: 700; font-size: 16px">Connect on LinkedIn ↗</a>
+<a href="https://www.linkedin.com/in/aditi-sankara" style="text-decoration: none; padding: 14px 26px; background: var(--purple); color: var(--on-accent); border: 2px solid var(--line); border-radius: 999px; box-shadow: 4px 4px 0 #F08A2C; font-weight: 700; font-size: 16px">Connect on LinkedIn ↗</a>
 <a href="mailto:aditi.sankara18@gmail.com" style="text-decoration: none; padding: 14px 24px; background: var(--card); color: var(--ink); border: 2px solid var(--line); border-radius: 999px; font-weight: 700; font-size: 16px">Drop a mail ✉</a>
 </div>
 </section>
@@ -334,7 +334,7 @@ résumé
 <script>
 (function(){
   var root=document.getElementById('root'), btn=document.getElementById('themeToggle'), lab=document.getElementById('themeLabel');
-  function apply(d){root.className=d?'t-dark':'t-light'; if(lab) lab.textContent=d?'light mode':'dark mode'; document.body.style.background=d?'#17110F':'#F7F5EE';}
+  function apply(d){root.className=d?'t-dark':'t-light'; if(lab) lab.textContent=d?'light mode':'dark mode'; document.body.style.background=d?'#0E141A':'#F7F5EE';}
   var d=false; try{d=localStorage.getItem('theme')==='dark';}catch(e){}
   apply(d);
   if(btn) btn.addEventListener('click',function(){d=!d; apply(d); try{localStorage.setItem('theme',d?'dark':'light');}catch(e){}});
